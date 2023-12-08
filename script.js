@@ -15,12 +15,15 @@ const lastWatchMovie = prompt("One of the last movies"),
      secondWatchMovie = prompt("One of the last movies"),
      secondMovieGrade = prompt("your grade");
 
-personalMovieDb['movies'] = {
-    'lastWatchMovie': lastWatchMovie,
-    'movieGrade': movieGrade,
-    'secondWatchMovie':secondWatchMovie,
-    'secondMovieGrade': secondMovieGrade
-}
+// personalMovieDb['movies'] = {
+//     'lastWatchMovie': lastWatchMovie,
+//     'movieGrade': movieGrade,
+//     'secondWatchMovie':secondWatchMovie,
+//     'secondMovieGrade': secondMovieGrade
+// }
+
+personalMovieDb.movies[lastWatchMovie] = movieGrade;
+personalMovieDb.movies[secondWatchMovie] = secondMovieGrade;
 
 
 console.log(personalMovieDb.movies);
