@@ -22,8 +22,8 @@ const lastWatchMovie = prompt("One of the last movies"),             // ввож
 //     'secondMovieGrade': secondMovieGrade
 // }
 
-personalMovieDb.movies[lastWatchMovie] = movieGrade;    // второй
-personalMovieDb.movies[secondWatchMovie] = secondMovieGrade;
+personalMovieDb.movies[lastWatchMovie] = movieGrade;    // второй вариант,я присваиваю свойсту movies дополнительное свойство lastWatch movie
+personalMovieDb.movies[secondWatchMovie] = secondMovieGrade;  // и в это свойство передаю переменную Moviegrade, key:item
 
 
 console.log(personalMovieDb.movies);  // вывод в консоль
